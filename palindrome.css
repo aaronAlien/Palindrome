@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Bebas+Neue&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --maya-blue: #6fbde4;
+  --blue-gray: #6b97bd;
+  --non-photo-blue: #8ee3f8;
+  --columbia-blue: #cdeefc;
+  --off-white: #fefcfc;
+  --black: #000000;
+  --grey: #d0dadd;
+}
+
+html {
+  font-size: 65.5%;
+}
+
+body {
+  background-color: var(--off-white);
+  background: linear-gradient(
+    0deg,
+    var(--columbia-blue) 0%,
+    var(--off-white) 72%
+  );
+  font-size: 1.4rem;
+  font-family: "Alata", Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0 10rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 0.5rem solid var(--black);
+  background-color: var(--grey);
+  padding: 2em 8rem 6rem 8rem;
+  border-radius: 22px;
+  width: 80%;
+}
+
+h1 {
+  border-bottom: 0.5rem solid var(--off-white);
+  border-radius: 1.8rem;
+  padding: 1rem;
+  font-family: "Bebas Neue", Verdana, sans-serif;
+  text-align: center;
+  font-size: 5rem;
+  letter-spacing: 2.5px;
+  width: 100%;
+}
+
+label {
+  text-decoration: underline;
+}
+
+label,
+input {
+  font-size: 2.2rem;
+}
+
+label,
+input,
+button {
+  margin-top: 2.8rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+#check-btn {
+  font-family: "Alata", Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 1rem;
+  font-size: 2.8rem;
+  border-radius: 1rem;
+}
+
+#check-btn:hover {
+  background-color: var(--non-photo-blue);
+}
+
+#result {
+  margin-top: 2.8rem;
+  padding: 1rem;
+  font-size: 2.8rem;
+  text-align: center;
+  width: 100%;
+  border-bottom: 1px solid var(--blue-gray);
+  overflow: auto;
+}
+/* MEDIA */
+
+/* mobile */
+@media screen and (max-width: 780px) and (orientation: portrait) {
+  body {
+    margin: 0;
+  }
+
+  .container {
+    padding: 2em 2rem 6rem 2rem;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  label,
+  input,
+  button {
+    font-size: 1.6rem;
+  }
+
+  #check-btn {
+    font-size: 2rem;
+  }
+
+  #result {
+    font-size: 2rem;
+  }
+}
