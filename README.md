@@ -1,2 +1,2 @@
 # Palindrome
- JS practice -  palinidrome check
+ JS practice -  palindrome check
